@@ -1,0 +1,55 @@
+{
+  "layouts": [
+    {"id":"L1","name":"Conversion Split","bestFor":"businesses with strong emergency/phone intent","hero":"split-image-right","sections":["hero","services","proof","service-areas","faq","contact"]},
+    {"id":"L2","name":"Professional Center","bestFor":"traditional local companies","hero":"centered","sections":["hero","services","benefits","reviews","faq","contact"]},
+    {"id":"L3","name":"Emergency Direct","bestFor":"24h or urgent services","hero":"full-bleed","sections":["hero","trust-strip","services","reviews","faq","contact"]},
+    {"id":"L4","name":"Local Authority","bestFor":"companies competing on proximity and reviews","hero":"split-copy-left","sections":["hero","reviews","services","areas","faq","contact"]},
+    {"id":"L5","name":"Premium Minimal","bestFor":"higher-ticket renovation/installation services","hero":"editorial","sections":["hero","services","case-study","reviews","faq","contact"]}
+  ],
+  "palettes": [
+    {"id":"P1","name":"Navy Orange","surface":"#F8FAFC","text":"#0F172A","primary":"#0F3D5E","accent":"#F97316"},
+    {"id":"P2","name":"Charcoal Yellow","surface":"#FAFAFA","text":"#171717","primary":"#202020","accent":"#FACC15"},
+    {"id":"P3","name":"Blue Cyan","surface":"#F7FBFF","text":"#0F172A","primary":"#155EEF","accent":"#06B6D4"},
+    {"id":"P4","name":"Forest Cream","surface":"#FCFBF5","text":"#18221B","primary":"#1F5A40","accent":"#D5A84B"},
+    {"id":"P5","name":"Graphite Orange","surface":"#F8F8F7","text":"#18181B","primary":"#27272A","accent":"#EA580C"},
+    {"id":"P6","name":"Petrol White","surface":"#F8FAFA","text":"#102A2E","primary":"#155E63","accent":"#2DD4BF"}
+  ],
+  "fonts": [
+    {"id":"F1","name":"Modern Sans","heading":"Manrope","body":"Inter"},
+    {"id":"F2","name":"Strong Grotesk","heading":"Plus Jakarta Sans","body":"Inter"},
+    {"id":"F3","name":"Humanist","heading":"DM Sans","body":"DM Sans"},
+    {"id":"F4","name":"Editorial Sans","heading":"Space Grotesk","body":"Inter"}
+  ],
+  "heroes": [
+    {"id":"H1","name":"Split Image","layoutFamily":["L1","L4"],"imagePosition":"right","ctaPriority":"phone"},
+    {"id":"H2","name":"Centered CTA","layoutFamily":["L2"],"imagePosition":"below","ctaPriority":"quote"},
+    {"id":"H3","name":"Full Bleed Emergency","layoutFamily":["L3"],"imagePosition":"background","ctaPriority":"phone"},
+    {"id":"H4","name":"Editorial","layoutFamily":["L5"],"imagePosition":"side","ctaPriority":"quote"}
+  ],
+  "services": [
+    {"id":"S1","name":"Icon Grid","columns":[2,3,4]},
+    {"id":"S2","name":"Large Cards","columns":[1,2,3]},
+    {"id":"S3","name":"Compact List","columns":[1,2]},
+    {"id":"S4","name":"Featured + Secondary","columns":[1,3]}
+  ],
+  "reviews": [
+    {"id":"R1","name":"Rating Cards"},
+    {"id":"R2","name":"Large Quote"},
+    {"id":"R3","name":"Compact Carousel"}
+  ],
+  "faq": [
+    {"id":"Q1","name":"Accordion"},
+    {"id":"Q2","name":"Two Column FAQ"}
+  ],
+  "contact": [
+    {"id":"C1","name":"Form + Contact Info"},
+    {"id":"C2","name":"Form + Map"},
+    {"id":"C3","name":"Phone First"}
+  ],
+  "footer": [
+    {"id":"T1","name":"Simple"},
+    {"id":"T2","name":"Service Directory"}
+  ],
+  "radius": ["sharp","medium","round"],
+  "density": ["compact","medium","airy"]
+}

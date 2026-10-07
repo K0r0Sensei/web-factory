@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "when": {"emergency24h": true},
+      "prefer": {"layout": "L3", "hero": "H3", "contact": "C3", "ctaPrimary": "phone"}
+    },
+    {
+      "when": {"ratingMin": 4.5, "reviewsCountMin": 50},
+      "prefer": {"layout": "L4", "reviews": "R1"}
+    },
+    {
+      "when": {"premiumServices": true},
+      "prefer": {"layout": "L5", "hero": "H4"}
+    },
+    {
+      "when": {"areasCountMin": 4},
+      "prefer": {"layout": "L4", "contact": "C2"}
+    },
+    {
+      "when": {"default": true},
+      "prefer": {"layout": "L1", "hero": "H1", "services": "S1", "contact": "C1"}
+    }
+  ]
+}

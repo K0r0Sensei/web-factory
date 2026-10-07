@@ -1,0 +1,50 @@
+import type { BusinessData, DesignSpec } from './design';
+export type LeadWebsiteAudit = {
+  checked: boolean;
+  reachable: boolean;
+  status?: number;
+  finalUrl?: string;
+  title?: string;
+  metaDescription?: string;
+  hasViewport: boolean;
+  hasH1: boolean;
+  hasPhone: boolean;
+  hasWhatsApp: boolean;
+  hasHttps: boolean;
+  htmlBytes?: number;
+  responseMs?: number;
+  opportunityScore: number;
+  reasons: string[];
+  error?: string;
+};
+
+export type Lead = {
+  id: string;
+  businessName: string;
+  city: string;
+  province?: string;
+  phone: string;
+  whatsapp?: string;
+  email?: string;
+  website?: string;
+  rating?: number;
+  reviewsCount?: number;
+  description?: string;
+  services: string[];
+  emergency24h?: boolean;
+  serviceAreas?: string[];
+  audit?: LeadWebsiteAudit;
+  status: 'new' | 'audited' | 'ready' | 'generating' | 'demo' | 'error';
+  error?: string;
+  demo?: {
+    mode: 'ai' | 'fallback';
+    model?: string;
+    layout: string;
+    palette: string;
+    latencyMs: number;
+    business: BusinessData;
+    design: DesignSpec;
+    demoPath?: string;
+    proposalPath?: string;
+  };
+};
