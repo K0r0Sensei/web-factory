@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { GeneratedSite } from '../../../src/engine/renderer';
 import { ProposalLeadForm } from '../../../src/components/proposal-lead-form';
+import { ProposalCtaModal } from '../../../src/components/proposal-cta-modal';
 import { getDemo } from '../../../src/server/demo-store';
 
 export const dynamic = 'force-dynamic';
@@ -30,7 +31,7 @@ export default async function ProposalPage({ params }: { params: Promise<{ slug:
             </div>
           </div>
           <div className="proposal-actions" id="contacto-propuesta">
-            <a className="proposal-btn proposal-btn-primary" href="#quiero-esta-web">Quiero esta web</a>
+            <ProposalCtaModal slug={demo.slug} />
             <a className="proposal-btn proposal-btn-secondary" href={`/demo/${demo.slug}`} target="_blank" rel="noreferrer">Ver solo la web</a>
           </div>
         </div>
@@ -52,7 +53,7 @@ export default async function ProposalPage({ params }: { params: Promise<{ slug:
           <span className="proposal-offer-label">SIGUIENTE PASO</span>
           <strong>¿Te gusta cómo ha quedado?</strong>
           <p>Déjanos tus datos y te contactaremos para terminar de adaptar la propuesta y explicarte cómo ponerla online.</p>
-          <a className="proposal-btn proposal-btn-primary" href="#quiero-esta-web">Hablar sobre la propuesta</a>
+          <ProposalCtaModal slug={demo.slug} label="Hablar sobre la propuesta" />
         </div>
       </section>
 
@@ -69,7 +70,7 @@ export default async function ProposalPage({ params }: { params: Promise<{ slug:
         </div>
       </section>
 
-      <a className="proposal-mobile-cta" href="#quiero-esta-web">Quiero esta web →</a>
+      <div className="proposal-mobile-cta"><ProposalCtaModal slug={demo.slug} label="Quiero esta web →" /></div>
     </div>
   );
 }
